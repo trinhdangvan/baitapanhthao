@@ -34,20 +34,20 @@
         <input type="submit" value="SIGN IN">
     </div>
 </form>
-<?php
-
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $email = $_POST["email"];
-    $password = $_POST["password"];
-    if ($email == "admin@gmail.com" && $password == "admin") {
-        //echo "Đăng nhập thành công";
-        header("Location: http://james.codegym.vn");
-    } else {
-        echo "Đăng nhập thất bại";
-    }
-}
-
-
-?>
-</body>
-</htm>
+-- <?php
+//
+//if ($_SERVER["REQUEST_METHOD"] == "POST") {
+//    $email = $_POST["email"];
+//    $password = $_POST["password"];
+//    if ($email == "admin@gmail.com" && $password == "admin") {
+//        //echo "Đăng nhập thành công";
+//        header("Location: http://james.codegym.vn");
+//    } else {
+//        echo "Đăng nhập thất bại";
+//    }
+//}
+//
+//
+//?>
+<!--</body>-->
+<!--</htm>-->
