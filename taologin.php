@@ -14,7 +14,6 @@
             padding: 48px;
             border: 1px #CCC solid;
         }
-
         .login input {
             padding: 10px;
             margin: 10px
@@ -28,26 +27,23 @@
 <body>
 <form method="post">
     <div class="login">
-        <h1>Accout Login</h1>
-        <input type="text" name="email" placeholder="E-mail">
-        <input type="password" name="password" placeholder="password">
-        <input type="submit" value="SIGN IN">
+        <fieldset>Login </br>
+            <input type="text" placeholder="username" name="username"></br>
+            <input type="password" placeholder="password" name="password"></br>
+            <button type="submit" >Sign in</button>
+        </fieldset>
     </div>
 </form>
--- <?php
-//
-//if ($_SERVER["REQUEST_METHOD"] == "POST") {
-//    $email = $_POST["email"];
-//    $password = $_POST["password"];
-//    if ($email == "admin@gmail.com" && $password == "admin") {
-//        //echo "Đăng nhập thành công";
-//        header("Location: http://james.codegym.vn");
-//    } else {
-//        echo "Đăng nhập thất bại";
-//    }
-//}
-//
-//
-//?>
-<!--</body>-->
-<!--</htm>-->
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $username = $_POST["username"];
+    $password = $_POST["password"];
+    if($username === "admin" && $password === "admin") {
+        echo "đăng nhập thành công";
+    } else {
+        echo "đăng nhập thất bại</h2>";
+    }
+}
+?>
+</body>
+</htm>
